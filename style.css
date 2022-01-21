@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    background-color: black;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("Assets/mashiro_background.jpg");
+    background-position: center top;
+    font-family: 'Ubuntu', sans-serif;
+    color: white; 
+    padding: 5% 0px 0px 0px;
+}
+
+.button {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    margin: 10px 4px;
+}
+
+.grid-container {
+    display: grid; 
+    grid-template-columns: repeat(5, 80px);
+    grid-template-rows: repeat(5, 80px);
+    text-align: center;
+    justify-content: center;
+}
