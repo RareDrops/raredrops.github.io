@@ -2,7 +2,7 @@
 
 body {
     background-color: black;
-    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("Assets/mashiro_background.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 2), rgba(0, 0, 0, 0.75)), url("Assets/mashiro_background.jpg");
     background-position: center top;
     font-family: 'Ubuntu', sans-serif;
     color: white; 
