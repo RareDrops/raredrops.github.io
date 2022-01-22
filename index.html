@@ -1,35 +1,68 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css" integrity="sha512-4rPgyv5iG0PZw8E+oRdfN/Gq+yilzt9rQ8Yci2jJ15rAyBmF0HBE4wFjBkoB72cxBeg63uobaj1UcNt/scV93w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="style.css"/>
         <link rel="icon" href="Assets/icon/mashiro_title_icon.jpg" type="image/x-icon"/>
-        <!-- <script src="discordalert.js"></script> -->
+        <!--<script src="Scripts/page_scripts.js"></script> -->
         <title>RareDrop's website</title>
     </head>
 <body>
-    <div class="first_page fixed">
-        <div class = center_aligned>
-            <h1>Hi! My name is RareDrop(Himari)!</h1>
-            <p class=center>Welcome to my profile in github!</p>
+    <div id="fullpage">
+        <div class="first_page fixed section">
+            <div class = center_aligned>
+                <h1>Hi! My name is RareDrop(Himari)!</h1>
+                <p class=center>Welcome to my profile in github!</p>
+            </div>
+            <div class = left_aligned>
+                <h1>General things about me:</h1>
+                <p class=left>
+                    I'm a 19 years old girl, currently a student studying CompSci.. and U-uhm.. as for my interests..
+                    I do like coding scripts, applications, and bots. I also enjoy reading, drawing stuff, and sometimes listening to music.
+                    And uhm.. I really like playing games as well, I think I've spent the majority of my free time trying out games.. any games so long as it's cute and/or fun to play!
+                    I'm a "bit" of a weeb as well so I do enjoy watching anime/VNs and reading manga (even though I rarely read manga nowadays).
+                    <br>...T-this is so embarrasing to write. <br>(˵¯͒〰¯͒˵)
+                </p>
+            </div>
         </div>
-        <div class = left_aligned>
-            <h1>General things about me:</h1>
-            <p class=left>
-                I'm 19 years old girl, currently a student studying CompSci.. and U-uhm.. as for my interests..
-                I do like coding scripts, applications, and bots. I also enjoy reading, drawing stuff, and sometimes listening to music.
-                And uhm.. I really like playing games as well, I think I've spent the majority of my free time trying out games.. any games so long as it's cute and/or fun to play!
-                I'm a "bit" of a weeb as well so I do enjoy watching anime/VNs and reading manga (even though I rarely read manga nowadays).
-                <br>...T-this is so embarrasing to write. <br>(˵¯͒〰¯͒˵)
-            </p>
+        <div class="fixed second_page section">
+            <div class = right_aligned>
+                <h1>Games I play</h1>
+                <p class=left>
+                    Princess Connect Re:Dive<br>
+                    Genshin Impact<br>
+                    Deep Rock Galactic<br>
+                    Stardew Valley<br>
+                    Terraria<br>
+                </p>
+            </div>
+        </div>
+        <div class="fixed third_page section">
+            <div class= left_aligned>
+                <h1>VNs that I've read</h1>
+                <p class=left>
+                    Senren * Banka<br>
+                    Aokana: Four Rhythms Across the Blue<br>
+                </p>
+            </div>
         </div>
     </div>
-    <div class="fixed second_page">
-        <div class = right_aligned>
-            <h1 style="color:seagreen">VNs I have read</h1>
-            <p class=left style="color:cornflowerblue">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            </p>
-        </div>
-    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js" integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+
+        new fullpage('#fullpage', {
+            autoScrolling: true, //adds the fullpage functionality aka fullpage scrolling
+            navigation: true, //adds the three dotted lines at the right side of the page for navigation
+            scrollBar: true, //basically enables scrollbar for  parallax effect to work, I use css to hide the scrollbar again(on the body properties)
+            navigationPosition:'right',
+            anchors:['firstPage', 'secondPage', 'thirdPage'],
+            navigationTooltips: ['Home','Games I play',"VNs I've  read"],
+            showActiveTooltip: true,
+            lazyLoading: true,
+            controlArrows: true,
+        })
+
+    </script>
 </body>
 </html>
