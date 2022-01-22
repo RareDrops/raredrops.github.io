@@ -1,12 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+html {
+    height:100%;
+}
+
 body {
-    background-color: black;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("Assets/mashiro_background.jpg");
-    background-position: center top;
     font-family: 'Ubuntu', sans-serif;
     color: white; 
-    padding: 5% 0px 0px 0px;
+    height:100%;
+}
+
+h1 {
+    color:bisque
+}
+
+div.fixed {
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    background-attachment: fixed; /*use scoll for normal scrolling, use fixed for fancy way of scrolling*/
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: table;
+    background-position: center top;
+}
+
+
+.first_page {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("Assets/mashiro_background.png");
+
+}
+
+.second_page {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("Assets/mashiro_background2.png");
+
 }
 
 .button {
@@ -26,3 +57,41 @@ body {
     justify-content: center;
 }
 
+p {
+    font-size: 20px;
+}
+
+p.center {
+    text-align: center;
+}
+
+p.left {
+    text-align: initial;
+}
+
+div.left_aligned {
+    backdrop-filter: opacity(0.8) blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);  
+    width: 350px;
+    border: 15px;
+    padding: 50px;
+    margin: 20px;
+}
+
+div.center_aligned {
+    width: 300px;
+    border: 15px ;
+    padding: 50px;
+    margin: auto;
+}
+
+div.right_aligned {
+    position: absolute;
+    right: 10px;
+    backdrop-filter: opacity(0.8) blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);  
+    width: 350px;
+    border: 15px;
+    padding: 50px;
+    margin: 20px;
+}
