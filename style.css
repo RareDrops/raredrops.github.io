@@ -47,6 +47,7 @@ div.fixed {
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("Assets/backgrounds/mashiro_background3.png");
 }
 
+
 /*edit grid-template-columns or rows to specify the box in which you can put icons*/
 /*usage: place the link/image in a class with both grid-container and button example:  class="button grid-item-1 or 2"*/
 .grid-container {
