@@ -47,6 +47,16 @@ div.fixed {
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("Assets/backgrounds/mashiro_background3.png");
 }
 
+/*edit grid-template-columns or rows to specify the box in which you can put icons*/
+/*usage: place the link/image in a class with both grid-container and button example:  class="button grid-item-1 or 2"*/
+.grid-container {
+    display: grid; 
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: repeat(1, 80px);
+    text-align: center;
+    justify-content: center;
+}
+
 .button {
     text-align: center;
     text-decoration: none;
@@ -54,14 +64,6 @@ div.fixed {
     border: none;
     cursor: pointer;
     margin: 10px 4px;
-}
-
-.grid-container {
-    display: grid; 
-    grid-template-columns: repeat(5, 80px);
-    grid-template-rows: repeat(5, 80px);
-    text-align: center;
-    justify-content: center;
 }
 
 h1 {
@@ -90,10 +92,11 @@ div.left_aligned {
 }
 
 div.center_aligned {
-    width: 300px;
-    border: 15px ;
+    width: 530px;
+    border: 15px;
     padding: 50px;
     margin: auto;
+    text-align: center;
 }
 
 div.right_aligned {
