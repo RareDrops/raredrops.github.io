@@ -1,95 +1,108 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css" integrity="sha512-4rPgyv5iG0PZw8E+oRdfN/Gq+yilzt9rQ8Yci2jJ15rAyBmF0HBE4wFjBkoB72cxBeg63uobaj1UcNt/scV93w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="style.css"/>
-        <link rel="icon" href="Assets/icon/mashiro_title_icon.jpg" type="image/x-icon"/>
-        <!--<script src="Scripts/page_scripts.js"></script> -->
-        <title>RareDrop's website</title>
-    </head>
-<body>
-    <div id="fullpage">
-        <div class="first_page fixed section">
-            <div class = center_aligned>
-                <h1>Hi! My name is RareDrop(Himari)!</h1>
-                <p class=center>Welcome to my profile</p>
-            </div>
-            <div class = left_aligned>
-                <h1>General things about me:</h1>
-                <p class=left>
-                    -I'm 21 years old, currently studying compsci specializing in relational database management and computer graphics and image processing.<br>
-                    -I do like coding scripts, applications, and bots. I also enjoy reading, playing games, drawing stuff, and sometimes listening to music.<br>
-                    -I'm a weeb as well so I do enjoy watching/reading anime, VNs, LNs.<br>
-                </p>
-            </div>
-            <center><h1 style="color:pink">Socials</h1></center>
-            <div class="grid-container">
-                <a href="https://steamcommunity.com/id/Raredroppu/" class="button grid-item-1" target=_blank><!--target=_blank redirect to new page-->
-                    <img src="Assets\icon\steam.svg">
-                </a>
-                <a href="https://github.com/RareDrops" class="button grid-item-2" target=_blank>
-                    <img src="Assets\icon\github.svg">
-                </a>
-                <a href="mailto:droprares@gmail.com" class="button grid-item-3" target=_blank>
-                    <img src="Assets\icon\mail.svg">
-                </a>
-                <input type="image" src="Assets\icon\discord.svg" class="button grid-item-4" onclick=discordpopup()>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rare Drop</title>
+	<link rel="icon" href="imgs/favicon.svg">
+	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- icon import: https://fontawesome.com/search -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body class="main-content">
 
-                <script type="text/javascript">
-                    function discordpopup(){
-                    alert("Himari#6182");
-                    }
-                </script>
-                
-            </div>
-        </div>
-
-        <div class="fixed second_page section">
-            <div class = right_aligned>
-                <h1>Games I play and like</h1>
-                <p class=left>
-                    Genshin Impact<br>
-                    Honkai Staa Rail<br>
-                    Stardew Valley<br>
-                    Terraria<br>
-                    Blue Archive<br>
-                    Rimworld<br>
-                    Satisfactory<br>
-                </p>
-            </div>
-        </div>
-
-        <div class="fixed third_page section">
-            <div class= left_aligned>
-                <h1>VNs that I like</h1>
-                <p class=left>
-                    Senren * Banka<br>
-                    Aokana: Four Rhythms Across the Blue<br>
-                    Cafe Stella<br>
-                    Parquet<br>
-                    Riddle Joker<br>
-                    Sabbath of the Witch<br>
-                    ATRI -My Dear Moments-<br>
-                </p>
-            </div>
-        </div>
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="#home" class="control control-1 active-btn" data-id="home">RAREDRP</a></li>
+                <li><a href="#portfolio" class="control control-2" data-id="portfolio">Portfolio</a></li>
+                <li><a href="#about" class="control control-3" data-id="about">About</a></li>
+                <li><a href="#resume" class="control control-4" data-id="resume">Resume</a></li>
+                <li><a href="#contact" class="control control-5" data-id="contact">Contact</a></li>
+            </ul>
+        </nav>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js" integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<main>
 
-    <script>
+		<section class="section sec1 header" id = "home">
+			<div class = "fade-in-up header-block">
+				<span class="fade-in-up inline-block">
+					<span class="text-span-1">Aloe there, I'm Rare Drop.</span>
+					<span class="text-span-2">✰</span>
+				</span>
+				<span class="fade-in-up text-span-1 inline-block">A programmer who thrives in collaborative and innovative spaces. Building human-centric tools, inspiring people, and bringing impactful ideas to life. </span>
+				<div class="fade-in inline-block">
+					<span class="text-span-3 inline-block heading-2">Scroll to see works and more about me </span>
+					<span class="text-span-4 inline-block heading-2 heading-3">↓</span>
+					<div class="divider-2"></div>
+				</div>
+			</div>
+		</section>
 
-        new fullpage('#fullpage', {
-            autoScrolling: true, //adds the fullpage functionality aka fullpage scrolling
-            navigation: true, //adds the three dotted lines at the right side of the page for navigation
-            scrollBar: true, //basically enables scrollbar for  parallax effect to work, I use css to hide the scrollbar again(on the body properties)
-            navigationPosition:'right',
-            anchors:['Home', 'Games', 'VisualNovels'],
-            navigationTooltips: ['Home','Games I play',"VNs I've  read"],
-            showActiveTooltip: true,
-            lazyLoading: true,
-        })
+		<section class="section sec2 portfolio" id = "portfolio">
+			<div class="w-layout-grid grid-5 landing fade-in-up">
+				<a class="project-card discord w-inline-block"></a>
+				<a class="w-inline-block div-block-1">
+					<span class="text-span-5">A utility bot designed to provide intuitive tools, and enhance the Discord experience for gaming communities.</span>
+				</a>
+			</div>
+		</section>
 
-    </script>
+		<section class="section sec3 about placeholder-section" id = "about">
+			<div class = center_aligned>
+				<h1>Hi! My name is RareDrop(Himari)!</h1>
+				<p class=center>Welcome to my profile</p>
+			</div>
+			<div class = left_aligned>
+				<h1>General things about me:</h1>
+				<p class=left>
+					-I'm 21 years old, currently studying compsci specializing in relational database management and computer graphics and image processing.<br>
+					-I do like coding scripts, applications, and bots. I also enjoy reading, playing games, drawing stuff, and sometimes listening to music.<br>
+					-I'm a weeb as well so I do enjoy watching/reading anime, VNs, LNs.<br>
+				</p>
+			</div>
+		</section>
+		<section class="section sec4 resume placeholder-section" id = "resume">
+			<div class = "fade-in-up header-block">
+				<span class="fade-in-up inline-block">
+					<span class="text-span-1">Aloe there, I'm Rare Drop.</span>
+					<span class="text-span-2">✰</span>
+				</span>
+				<span class="fade-in-up text-span-1 inline-block">A programmer who thrives in collaborative and innovative spaces. Building human-centric tools, inspiring people, and bringing impactful ideas to life. </span>
+				<div class="fade-in inline-block">
+					<span class="text-span-3 inline-block heading-2">Scroll to see works and more about me </span>
+					<span class="text-span-4 inline-block heading-2 heading-3">↓</span>
+					<div class="divider-2"></div>
+				</div>
+			</div>
+		</section>
+		<section class="section sec5 contact placeholder-section" id = "contact">
+
+		</section>
+	</main>
+
+	<!-- Buttons -->
+	<div class="controls">
+		<div class="control control-1 active-btn" data-id="home">
+			<a href="#home" class="control control-1 active-btn" data-id="home"><i class="fa-solid fa-house"></i></a>
+		</div>
+		<div class="control control-2 " data-id="portfolio">
+			<a href="#portfolio" class="control control-2" data-id="portfolio"><i class="fa-brands fa-github"></i></a>
+		</div>
+		<div class="control control-3 " data-id="about">
+			<a href="#about" class="control control-3" data-id="about"><i class="fa-solid fa-user"></i></a>
+		</div>
+		<div class="control control-4 " data-id="resume">
+			<a href="#resume" class="control control-4" data-id="resume"><i class="fa-solid fa-paperclip"></i></a>
+		</div>
+		<div class="control control-5 " data-id="contact">
+			<a href="#contact" class="control control-5" data-id="contact"><i class="fa-solid fa-envelope"></i></a>
+		</div>
+	</div>
+
+	<script defer src="app.js"></script>
 </body>
 </html>
