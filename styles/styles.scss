@@ -77,7 +77,7 @@ section {
 	display: grid;
 	place-items: center;
 	align-content: center;
-	min-height: 50vh;
+	min-height: 10vh;
 	width: 100%;
 	left: 0;
 	top: 0;
@@ -102,12 +102,52 @@ section {
 	padding-top: 24vh;
 }
 
+.footnote-block {
+	width: 90vw;
+	padding-right: 8vw;
+}
+
+.footer-links {
+    color: #232323;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    cursor: pointer;
+}
+
 .heading-2 {
 	margin-top: 7rem;
 }
 
 .heading-3 {
 	margin-left: 0.5rem;
+}
+
+.heading-4 {
+	margin-top: 0px;
+	margin-bottom: 10vh;
+	padding-right: 0vw;
+	padding-left: 0vw;
+	color: #0a5029;
+	font-size: 3em;
+	line-height: 7.5vh;
+	font-weight: 600;
+	text-align: center;
+}
+
+.about-text {
+	color: #1a1925;
+	line-height: 27px;
+	font-size: 1rem;
+	font-family: var(--font-family-secondary);
+	margin-top: 6vh;
+
+}
+
+.heading-2.more-padding {
+	width: 90vw;
+    margin-top: 15vh;
+    margin-bottom: 0vh;
+    padding-right: 16vw;
 }
 
 .divider-2 {
@@ -147,15 +187,15 @@ section {
 
 // Handles staggering of children of the same parent container of fade-in-up animation
 .fade-in-up:nth-child(1) {
-	animation-delay: 0.75s;
+	animation-delay: 0s;
 }
 
 .fade-in-up:nth-child(2) {
-	animation-delay: 1.75s;
+	animation-delay: 0.5s;
 }
 
 .fade-in-up:nth-child(3) {
-	animation-delay: 2.75s;
+	animation-delay: 1s;
 }
 
 // Handles delay animation of fade-in animation
@@ -172,6 +212,18 @@ section {
     100% {
         opacity: 1;
     }
+}
+
+.fade-in:nth-child(1) {
+	animation-delay: 0s;
+}
+
+.fade-in:nth-child(2) {
+	animation-delay: 0.5s;
+}
+
+.fade-in:nth-child(3) {
+	animation-delay: 1s;
 }
 
 .project-card {
@@ -213,6 +265,16 @@ section {
     grid-column-gap: 16px;
 }
 
+.middle-container {
+    display: flex;
+    justify-content: center; // Center horizontally
+    align-items: center; // Center vertically
+}
+
+.middle-text {
+    color: #000; // Adjust color as needed
+}
+
 .grid-5 {
     margin-top: 24vh;
     margin-bottom: 0px;
@@ -242,6 +304,51 @@ section {
 	border-radius: 20px;
     background-color: #1a1925;
     padding: 6vh 4vw;
+}
+
+.div-block-2 {
+	margin-right: 5vw;
+    margin-left: 5vw;
+    padding-bottom: 5vh;
+}
+
+.text-block-1 {
+	margin-top: 4vh;
+	margin-right: 0vw;
+	margin-bottom: 10vh;
+	padding-top: 0vh;
+	font-family: var(--font-family-secondary);
+	color: #1a1925;
+	font-size: 1rem;
+	line-height: 36px;
+	font-weight: 400;
+	text-align: left;
+	cursor: pointer;
+}
+
+.image-1 {
+    position: static;
+    left: 10%;
+    top: 0%;
+    right: 10%;
+    bottom: 10%;
+    display: block;
+    overflow: auto;
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+    clear: none;
+    border-style: solid;
+    border-width: 0px;
+    border-color: #e0d9ca;
+    border-radius: 12px;
+    text-align: left;
+    white-space: normal;
+    background-clip: border-box;
+    object-fit: fill;
+}
+
+.div-block-centered {
+    margin: 10vh 25vw 0vh;
 }
 
 
@@ -292,7 +399,8 @@ $text-spans: (
   "text-span-2": (font-size: 3.2rem, color: #fcb450, font-weight: 600),
   "text-span-3": (font-size: 14px, font-family: var(--font-family-secondary), color: var(--color-black-1), font-weight: 400),
   "text-span-4": (font-size: 22px, font-family: var(--font-family-secondary), color: var(--color-black-1), font-weight: 500),
-  "text-span-5": (font-size: 2.0rem, color: var(--color-grey-0), font-weight: 500)
+  "text-span-5": (font-size: 2.0rem, color: var(--color-grey-0), font-weight: 500),
+  "text-span-6": (font-size: 2.3rem, color: var(--color-dark-lime-green), font-weight: 600),
 );
 
 // Loop through the map and generate classes

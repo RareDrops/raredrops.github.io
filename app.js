@@ -103,7 +103,7 @@ function sectionObserverDarken() {
 				}
 			}
 		});
-	}, {threshold: 0.5}); // Trigger when 95% of the section is visible
+	}, {threshold: 0.65}); // Trigger when 95% of the section is visible
 
 	// Start observing all sections
 	sections.forEach((section) => {
@@ -117,7 +117,8 @@ function sectionObserverLighten() {
 		entries.forEach((entry) => {
 			if (entry.isIntersecting) {
 				const sectionId = entry.target.id; // Get the ID of the visible section
-				if (sectionId == 'home') {
+				console.log(sectionId);
+				if (sectionId == 'home' || sectionId == 'contact') {
 					lightenSections(); // Lighten the navigation bar scrolling on the home and footnote sections NEED FIX FOR FOOTNOTE (NONE YET)
 				}
 			}
