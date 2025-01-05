@@ -311,12 +311,18 @@ section {
   cursor: pointer;
 }
 
+.margin-bottom-1 {
+  margin-bottom: 14vh;
+}
+
+.margin-top-1 {
+  margin-top: 2vh;
+}
+
 .image-1 {
   position: static;
-  left: 10%;
-  top: 0%;
-  right: 10%;
-  bottom: 10%;
+  margin-left: auto;
+  margin-right: auto;
   display: block;
   overflow: auto;
   margin-top: 0vh;
@@ -432,4 +438,11 @@ section {
   --box-shadow-1: 0 3px 15px rgba(0,0,0,0.3);
   --font-family-primary: "Libre Baskerville", serif;
   --font-family-secondary: "Roboto Mono", serif;
+}
+
+@media screen and (max-width: 991px) {
+  .div-block-centred {
+    margin-right: 5vw;
+    margin-left: 5vw;
+  }
 }/*# sourceMappingURL=styles.css.map */

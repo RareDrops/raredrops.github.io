@@ -327,12 +327,18 @@ section {
 	cursor: pointer;
 }
 
+.margin-bottom-1 {
+	margin-bottom: 14vh;
+}
+
+.margin-top-1 {
+	margin-top: 2vh;
+}
+
 .image-1 {
     position: static;
-    left: 10%;
-    top: 0%;
-    right: 10%;
-    bottom: 10%;
+	margin-left: auto;
+    margin-right: auto;
     display: block;
     overflow: auto;
     margin-top: 0vh;
@@ -351,7 +357,6 @@ section {
 .div-block-centered {
     margin: 10vh 25vw 0vh;
 }
-
 
 // Controls
 .controls {
@@ -435,3 +440,6 @@ $text-spans: (
 	--font-family-primary: "Libre Baskerville", serif;
 	--font-family-secondary: "Roboto Mono", serif;
 }
+
+
+@import './media'; // Media queries must be at the bottom since everything is executed sequentially
