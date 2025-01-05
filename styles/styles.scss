@@ -47,6 +47,7 @@ html {
         }
 
         &.active-btn {
+			text-decoration: underline;
             color: var(--color-dark-lime-green);
         }
     }
