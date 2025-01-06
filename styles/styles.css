@@ -83,6 +83,10 @@ a {
   font-family: inherit;
 }
 
+.no-underline {
+  text-decoration: none !important;
+}
+
 header {
   height: 100vh;
   color: var(--color-dark-lime-green);
