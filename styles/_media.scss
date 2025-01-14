@@ -1,8 +1,42 @@
 @media screen and (max-width: 991px) {
 
-	.div-block-centred {
+    .div-block-centered {
         margin-right: 5vw;
         margin-left: 5vw;
     }
 
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .show-on-mobile {
+        display: flex;
+    }
+
+    .text-span-1 {
+        font-size: 2.2rem;
+        line-height: 3rem;
+    }
+
+    .text-span-2 {
+        font-size: 2.2rem;
+        line-height: 3rem;
+    }
+
+    .heading-4 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+}
+
+@media screen and (max-width: 479px) {
+    .text-span-1 {
+        font-size: 27px;
+        line-height: 36px;
+    }
+
+    .div-block-centered {
+        margin-top: 6vh;
+    }
 }

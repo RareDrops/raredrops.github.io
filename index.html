@@ -20,12 +20,19 @@
         <nav>
             <ul>
                 <li><a href="" class="control control-1 active-btn no-underline" data-id="home">RAREDRP</a></li>
-                <li><a href="#home" class="control control-2" data-id="home">Home</a></li>
-				<li><a href="#portfolio" class="control control-3" data-id="portfolio">Portfolio</a></li>
-                <li><a href="about.html" class="control control-4" data-id="about">About</a></li>
-                <li><a href="#contact" class="control control-5" data-id="contact">Contact</a></li>
+                <li class="hide-on-mobile"><a href="index.html" class="control control-2" data-id="home">Home</a></li>
+				<li class="hide-on-mobile"><a href="#portfolio" class="control control-3" data-id="portfolio">Portfolio</a></li>
+                <li class="hide-on-mobile"><a href="about.html" class="control control-4" data-id="about">About</a></li>
+                <li class="hide-on-mobile"><a href="#contact" class="control control-5" data-id="contact">Contact</a></li>
+				<li class="show-on-mobile" onclick=toggleSidebar()><i class="fa-solid fa-bars" style="padding: 20px;"></i></li>
             </ul>
         </nav>
+		<ul class="sidebar">
+			<li><a href="#home" class="control" data-id="home">Home</a></li>
+			<li><a href="#portfolio" class="control" data-id="portfolio">Portfolio</a></li>
+			<li><a href="about.html" class="control" data-id="about">About</a></li>
+			<li><a href="#contact" class="control" data-id="contact">Contact</a></li>
+		</ul>
     </div>
 
 	<main>

@@ -54,7 +54,8 @@ html {
 
     nav ul li:first-child {
         margin-right: auto; // Push the first item to the left
-		margin-left: 5rem;
+        margin-left: 4vw; // Adjust margin-left based on viewport width
+
     }
 
     nav ul li a {
@@ -368,6 +369,7 @@ section {
     margin-right: auto;
     display: block;
     overflow: auto;
+	max-width: 100%;
     margin-top: 0vh;
     margin-bottom: 0vh;
     clear: none;
@@ -382,8 +384,80 @@ section {
 }
 
 .div-block-centered {
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
     margin: 10vh 25vw 0vh;
 }
+
+.show-on-mobile {
+	display: none;
+}
+
+.sidebar {
+	position: absolute;
+	top: 10vh;
+	width: 100vw;
+	z-index: 999;
+	background-color: var(--color-primary);
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+    
+	&.hidden {
+		display: flex;
+		animation: slideUp 0.5s ease-out;
+	}
+
+	&.visible {
+		animation: slideDown .5s ease-out; // the animation time needs to be more than the delay time
+		display: flex;
+	}
+
+	@keyframes slideDown {
+        0% {
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+	@keyframes slideUp {
+		0% {
+			opacity: 1;
+			transform: translate(0);
+		}
+		100% {
+			opacity: 0;
+			transform: translateY(-100%);
+		}
+	}
+	
+
+	li {
+		width: 100%;
+		margin: 25px;
+		display: flex;
+		font-family: var(--font-family-secondary);
+		justify-content: center;
+
+		a {
+			text-decoration: none;
+			&.active-btn {
+				text-decoration: underline;
+				color: var(--color-dark-lime-green);
+			}
+		}
+	}
+}
+
+
+
+
 
 // Controls
 .controls {

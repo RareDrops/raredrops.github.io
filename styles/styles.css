@@ -50,7 +50,7 @@ html {
 }
 .navbar nav ul li:first-child {
   margin-right: auto;
-  margin-left: 5rem;
+  margin-left: 4vw;
 }
 .navbar nav ul li a {
   font-family: var(--font-family-secondary);
@@ -350,6 +350,7 @@ section {
   margin-right: auto;
   display: block;
   overflow: auto;
+  max-width: 100%;
   margin-top: 0vh;
   margin-bottom: 0vh;
   clear: none;
@@ -365,7 +366,68 @@ section {
 }
 
 .div-block-centered {
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
   margin: 10vh 25vw 0vh;
+}
+
+.show-on-mobile {
+  display: none;
+}
+
+.sidebar {
+  position: absolute;
+  top: 10vh;
+  width: 100vw;
+  z-index: 999;
+  background-color: var(--color-primary);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar.hidden {
+  display: flex;
+  animation: slideUp 0.5s ease-out;
+}
+.sidebar.visible {
+  animation: slideDown 0.5s ease-out;
+  display: flex;
+}
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slideUp {
+  0% {
+    opacity: 1;
+    transform: translate(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+.sidebar li {
+  width: 100%;
+  margin: 25px;
+  display: flex;
+  font-family: var(--font-family-secondary);
+  justify-content: center;
+}
+.sidebar li a {
+  text-decoration: none;
+}
+.sidebar li a.active-btn {
+  text-decoration: underline;
+  color: var(--color-dark-lime-green);
 }
 
 .controls {
@@ -445,8 +507,35 @@ section {
 }
 
 @media screen and (max-width: 991px) {
-  .div-block-centred {
+  .div-block-centered {
     margin-right: 5vw;
     margin-left: 5vw;
+  }
+  .hide-on-mobile {
+    display: none;
+  }
+  .show-on-mobile {
+    display: flex;
+  }
+  .text-span-1 {
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
+  .text-span-2 {
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
+  .heading-4 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+@media screen and (max-width: 479px) {
+  .text-span-1 {
+    font-size: 27px;
+    line-height: 36px;
+  }
+  .div-block-centered {
+    margin-top: 6vh;
   }
 }/*# sourceMappingURL=styles.css.map */

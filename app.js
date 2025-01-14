@@ -131,6 +131,19 @@ function sectionObserverLighten() {
 	});
 }
 
+function toggleSidebar() {
+	const sidebar = document.querySelector('.sidebar');
+	if (sidebar.classList.contains('visible')) {
+		sidebar.classList.add('hidden');
+		sidebar.classList.remove('visible');
+	}
+	else {
+		sidebar.classList.add('visible');
+		sidebar.classList.remove('hidden');
+	}
+}
+
+
 
 function init() {
 	PageTransition();
