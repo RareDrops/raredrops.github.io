@@ -42,7 +42,6 @@ function addActiveClass(section) {
     const fadeIn = section.querySelectorAll('.fade-in');
 
     fadeInUp.forEach((item) => {
-		console.log(item)
         item.classList.add('active');
     });
 
