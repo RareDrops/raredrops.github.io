@@ -28,6 +28,16 @@
         line-height: 2.5rem;
     }
 
+    .div-block-1 {
+        margin-top: 0;
+        margin-left: 0;
+        max-width: 80vw;
+    }
+
+    .w-layout-grid {
+        grid-template-columns: 1fr; // make 1 column instead of 2
+    }
+
 }
 
 @media screen and (max-width: 479px) {
@@ -43,4 +53,11 @@
     .controls {
         display: none;
     }
+
+    .landing {
+        margin-top: 30vh;
+        margin-bottom: 40vh;
+    }
+
+
 }

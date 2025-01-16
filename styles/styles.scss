@@ -39,7 +39,6 @@ html {
 	margin-top: 10px;
     width: 100%;
     top: 0;
-    z-index: 1000;
     nav ul {
         list-style: none;
         display: flex;
@@ -57,6 +56,10 @@ html {
         margin-left: 4vw; // Adjust margin-left based on viewport width
 
     }
+
+	nav ul li {
+		z-index: 100;
+	}
 
     nav ul li a {
 		font-family: var(--font-family-secondary);
@@ -76,6 +79,7 @@ html {
         }
     }
 }
+
 
 body {
 	background-color: var(--color-primary);
@@ -260,7 +264,6 @@ section {
     padding-bottom: 166px;
     background-color: #fbc9be;
     background-clip: border-box;
-    -webkit-text-fill-color: inherit;
 }
 
 .project-card.discord {
@@ -272,7 +275,6 @@ section {
     border-color: #6691cf;
     border-radius: 20px;
     background-image: url("../imgs/hifumin-banner.png"); // Ensure the path is correct
-    background-position: 50% 50%;
     background-size: cover; // Ensure the background image covers the element
 	background-repeat: no-repeat;
     cursor: pointer;
@@ -285,7 +287,8 @@ section {
 
 .w-layout-grid {
     display: grid;
-    grid-template-columns: 1fr;
+	margin-left: 5vw;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-row-gap: 16px;
     grid-column-gap: 16px;
@@ -312,19 +315,18 @@ section {
 }
 
 .landing {
+	display: grid;
     margin-top: 30vh;
     margin-bottom: 40vh;
-    grid-row-gap: 40vh;
-    grid-template-columns: 44vw 44vw;
+    grid-row-gap: 60vh;
     grid-template-rows: 1fr;
 }
 
 .div-block-1 {
     margin-top: 25vh;
 	margin-bottom: 25vh;
-    margin-right: 3vw;
-    margin-left: -24px;
-    padding-right: 2vw;
+    margin-left: -13vw;
+	max-width: 42vw;
 	border-radius: 20px;
     background-color: #1a1925;
     padding: 6vh 4vw;
@@ -391,17 +393,15 @@ section {
 
 .sidebar {
 	position: absolute;
-	top: 10vh;
+	top: 5vh;
 	width: 100vw;
-	z-index: 999;
+	z-index: 1; // Ensure the sidebar is on top of the page but not on top of the navbar
 	background-color: var(--color-primary);
 	display: none;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-    
 	&.hidden {
-		display: flex;
 		animation: slideUp 0.5s ease-out;
 	}
 
@@ -423,11 +423,12 @@ section {
 
 	@keyframes slideUp {
 		0% {
+			display: flex; // display flex first to ensure the animation plays out
 			opacity: 1;
 			transform: translate(0);
 		}
 		100% {
-			opacity: 0;
+			display: none; // remove the display after the animation plays out
 			transform: translateY(-100%);
 		}
 	}

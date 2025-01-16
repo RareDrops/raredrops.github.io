@@ -36,7 +36,6 @@ html {
   margin-top: 10px;
   width: 100%;
   top: 0;
-  z-index: 1000;
 }
 .navbar nav ul {
   list-style: none;
@@ -51,6 +50,9 @@ html {
 .navbar nav ul li:first-child {
   margin-right: auto;
   margin-left: 4vw;
+}
+.navbar nav ul li {
+  z-index: 100;
 }
 .navbar nav ul li a {
   font-family: var(--font-family-secondary);
@@ -245,7 +247,6 @@ section {
   padding-bottom: 166px;
   background-color: #fbc9be;
   background-clip: border-box;
-  -webkit-text-fill-color: inherit;
 }
 
 .project-card.discord {
@@ -257,7 +258,6 @@ section {
   border-color: #6691cf;
   border-radius: 20px;
   background-image: url("../imgs/hifumin-banner.png");
-  background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -270,7 +270,8 @@ section {
 
 .w-layout-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  margin-left: 5vw;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-row-gap: 16px;
   grid-column-gap: 16px;
@@ -297,19 +298,18 @@ section {
 }
 
 .landing {
+  display: grid;
   margin-top: 30vh;
   margin-bottom: 40vh;
-  grid-row-gap: 40vh;
-  grid-template-columns: 44vw 44vw;
+  grid-row-gap: 60vh;
   grid-template-rows: 1fr;
 }
 
 .div-block-1 {
   margin-top: 25vh;
   margin-bottom: 25vh;
-  margin-right: 3vw;
-  margin-left: -24px;
-  padding-right: 2vw;
+  margin-left: -13vw;
+  max-width: 42vw;
   border-radius: 20px;
   background-color: #1a1925;
   padding: 6vh 4vw;
@@ -377,9 +377,9 @@ section {
 
 .sidebar {
   position: absolute;
-  top: 10vh;
+  top: 5vh;
   width: 100vw;
-  z-index: 999;
+  z-index: 1;
   background-color: var(--color-primary);
   display: none;
   flex-direction: column;
@@ -387,7 +387,6 @@ section {
   justify-content: center;
 }
 .sidebar.hidden {
-  display: flex;
   animation: slideUp 0.5s ease-out;
 }
 .sidebar.visible {
@@ -406,11 +405,12 @@ section {
 }
 @keyframes slideUp {
   0% {
+    display: flex;
     opacity: 1;
     transform: translate(0);
   }
   100% {
-    opacity: 0;
+    display: none;
     transform: translateY(-100%);
   }
 }
@@ -528,6 +528,14 @@ section {
     font-size: 2rem;
     line-height: 2.5rem;
   }
+  .div-block-1 {
+    margin-top: 0;
+    margin-left: 0;
+    max-width: 80vw;
+  }
+  .w-layout-grid {
+    grid-template-columns: 1fr;
+  }
 }
 @media screen and (max-width: 479px) {
   .text-span-1 {
@@ -539,5 +547,9 @@ section {
   }
   .controls {
     display: none;
+  }
+  .landing {
+    margin-top: 30vh;
+    margin-bottom: 40vh;
   }
 }/*# sourceMappingURL=styles.css.map */
