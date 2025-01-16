@@ -60,7 +60,7 @@ function sectionObserver() {
 				addActiveClass(section); // Add active class on the visible section to use the animation
 		  	}
 		});
-	}, {threshold: 0.2}); // Trigger when 50% of the section is visible
+	}, {threshold: 0.15}); // Trigger when 20% of the section is visible
 
   
 	// Start observing all sections
@@ -103,7 +103,7 @@ function sectionObserverDarken() {
 				}
 			}
 		});
-	}, {threshold: 0.21}); // ADJUST THIS VALUE TO LOWER WHEN ADDING MORE PORTFOLIO
+	}, {threshold: 0.15}); // ADJUST THIS VALUE TO LOWER WHEN ADDING MORE PORTFOLIO
 
 	// Start observing all sections
 	sections.forEach((section) => {
@@ -122,7 +122,7 @@ function sectionObserverLighten() {
 				}
 			}
 		});
-	}, {threshold: 0.09}); // ADJUST THIS VALUE TO LOWER WHEN ADDING MORE PORTFOLIO
+	}, {threshold: 0.08}); // ADJUST THIS VALUE TO LOWER WHEN ADDING MORE PORTFOLIO
 
 	// Start observing all sections
 	sections.forEach((section) => {
