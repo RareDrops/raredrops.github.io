@@ -543,6 +543,9 @@ section {
     font-size: 27px;
     line-height: 36px;
   }
+  .text-span-5 {
+    font-size: 1.3rem;
+  }
   .div-block-centered {
     margin-top: 6vh;
   }
@@ -552,5 +555,8 @@ section {
   .landing {
     margin-top: 30vh;
     margin-bottom: 40vh;
+  }
+  .project-card.discord {
+    padding-bottom: 38vh;
   }
 }/*# sourceMappingURL=styles.css.map */
