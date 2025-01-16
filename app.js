@@ -74,7 +74,7 @@ function darkenSections(sectionId) {
 	// Get the section element by ID
 	sections.forEach((section) => {
 		sectionId = section.id;
-		if (sectionId == 'home') {
+		if (sectionId == 'home' || sectionId == 'contact') {
 			section.style.backgroundColor = ''
 		}
 		else {
