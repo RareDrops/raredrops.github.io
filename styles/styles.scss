@@ -285,11 +285,8 @@ section {
 
 .w-layout-grid {
     display: grid;
-    grid-auto-columns: 1fr;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: auto auto;
-    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
     grid-row-gap: 16px;
     grid-column-gap: 16px;
 }
@@ -310,13 +307,11 @@ section {
     grid-column-gap: 24px;
     grid-row-gap: 40vh;
     grid-template-areas: ".";
-    -ms-grid-columns: 44vw 24px 44vw;
     grid-template-columns: 44vw 44vw;
-    -ms-grid-rows: 1fr 40vh 1fr;
     grid-template-rows: 1fr 1fr; 
 }
 
-.grid-5.landing {
+.landing {
     margin-top: 30vh;
     margin-bottom: 40vh;
     grid-row-gap: 40vh;

@@ -270,9 +270,8 @@ section {
 
 .w-layout-grid {
   display: grid;
-  grid-auto-columns: 1fr;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
   grid-row-gap: 16px;
   grid-column-gap: 16px;
 }
@@ -297,7 +296,7 @@ section {
   grid-template-rows: 1fr 1fr;
 }
 
-.grid-5.landing {
+.landing {
   margin-top: 30vh;
   margin-bottom: 40vh;
   grid-row-gap: 40vh;
@@ -537,5 +536,8 @@ section {
   }
   .div-block-centered {
     margin-top: 6vh;
+  }
+  .controls {
+    display: none;
   }
 }/*# sourceMappingURL=styles.css.map */
