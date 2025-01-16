@@ -307,6 +307,8 @@ section {
 }
 
 .div-block-1 {
+  display: flex;
+  align-items: center;
   margin-top: 25vh;
   margin-bottom: 25vh;
   margin-left: -13vw;
