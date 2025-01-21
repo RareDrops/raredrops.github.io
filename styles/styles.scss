@@ -260,24 +260,34 @@ section {
 
 .project-card {
     padding-right: 592px;
-    padding-bottom: 166px;
     background-color: #fbc9be;
     background-clip: border-box;
-}
-
-.project-card.discord {
-    padding-right: 45vw;
+	padding-right: 45vw;
     padding-bottom: 76vh;
     padding-left: 10vw;
     border-style: solid;
     border-width: 6px;
     border-color: #6691cf;
     border-radius: 20px;
-    background-image: url("../imgs/hifumin-banner.png"); // Ensure the path is correct
-    background-position: 50% 50%;
+	background-position: 50% 50%;
     background-size: cover; // Ensure the background image covers the element
 	background-repeat: no-repeat;
     cursor: pointer;
+}
+
+.project-card.discord {
+    background-image: url("../imgs/hifumin-banner.png"); // Ensure the path is correct
+	border-color: #6691cf;
+}
+
+.project-card.translator {
+    background-image: url("../imgs/translator-app.png"); // Ensure the path is correct
+	border-color: #af14f7;
+}
+
+.project-card.boatingclub {
+    background-image: url("../imgs/boatclub-website.png"); // Ensure the path is correct
+	border-color: #fffb00;
 }
 
 .w-inline-block {
