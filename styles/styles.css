@@ -547,6 +547,7 @@ section {
   }
   .w-layout-grid {
     grid-template-columns: 1fr;
+    margin-left: 0;
   }
 }
 @media screen and (max-width: 479px) {
@@ -567,7 +568,7 @@ section {
     margin-top: 30vh;
     margin-bottom: 40vh;
   }
-  .project-card.discord {
+  .project-card {
     padding-bottom: 38vh;
   }
 }/*# sourceMappingURL=styles.css.map */

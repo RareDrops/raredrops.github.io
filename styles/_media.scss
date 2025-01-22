@@ -36,6 +36,7 @@
 
     .w-layout-grid {
         grid-template-columns: 1fr; // make 1 column instead of 2
+        margin-left: 0;
     }
 
 }
@@ -63,9 +64,8 @@
         margin-bottom: 40vh;
     }
 
-    .project-card.discord {
+    .project-card {
         padding-bottom: 38vh;
     }
-
 
 }
