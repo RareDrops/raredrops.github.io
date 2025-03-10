@@ -273,6 +273,16 @@ section {
   border-color: #fffb00;
 }
 
+.project-card.usertimecheck {
+  background-image: url("../imgs/usertimecheck-banner.png");
+  border-color: #54aeff;
+}
+
+.project-card.todoapp {
+  background-image: url("../imgs/todo-app-banner.png");
+  border-color: #62ff54;
+}
+
 .w-inline-block {
   max-width: 100%;
   display: inline-block;
