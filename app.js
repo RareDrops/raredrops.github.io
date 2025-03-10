@@ -60,7 +60,7 @@ function sectionObserver() {
 				addActiveClass(section); // Add active class on the visible section to use the animation
 		  	}
 		});
-	}, {threshold: 0.15}); // Trigger when 20% of the section is visible
+	}, {threshold: 0.10}); // Trigger when 20% of the section is visible
 
   
 	// Start observing all sections
@@ -103,7 +103,7 @@ function sectionObserverDarken() {
 				}
 			}
 		});
-	}, {threshold: 0.15}); // ADJUST THIS VALUE TO LOWER WHEN ADDING MORE PORTFOLIO
+	}, {threshold: 0.14}); // ADJUST THIS VALUE TO LOWER WHEN ADDING MORE PORTFOLIO
 
 	// Start observing all sections
 	sections.forEach((section) => {
